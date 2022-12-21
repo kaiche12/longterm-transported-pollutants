@@ -16,6 +16,11 @@ RTP composite code performed the final prediction of PM<sub>2.5</sub> by conside
 
 Most of these code are executed in the terminal e.g `# $ python3 next4hr_stri_fe_model_.py > out_composite_sc.log`
 
+## DATA
+
+Majority of the dataset we used are very large for example train size for each satellite tile is 11.7GB, remote weather train size is 1.1GB and for testing each tile has a size of 5.9GB while remote weather is 555MB. There we are not able to include those 
+file in our repository.
+
 ## INSTALL
 
 
