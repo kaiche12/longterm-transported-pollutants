@@ -14,7 +14,7 @@ STR_p code use the extracted remote pollutants with other features as input for 
 
 RTP composite code performed the final prediction of PM<sub>2.5</sub> by considering prediction results from STRI_p model and the base model
 
-Most of these code are executed in the terminal e.g `# $ python3 next4hr_stri_fe_model_.py > out_composite_sc.log`
+Most of these code are executed in the terminal e.g `# $ python3 next4hr_stri_fe_model_.py > out_stri_fe_n4hr.log`
 
 ## DATA
 
