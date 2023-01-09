@@ -119,8 +119,8 @@ chan2 = 148
 chan3 = 2
 time_t = 4
 
-
-model = load_model('next4hr_stri_model.h5')
+#load saved model
+model = load_model('next4hr_4tiles_18stations.h5')
 
 #feature dataset for year 2014
 h28v5_14 = (np.load('h28v06_14_train.npy'))
@@ -128,12 +128,11 @@ h28v6_14 = (np.load('h28v06_14_train.npy'))
 h29v5_14 = (np.load('h29v05_14_train.npy'))
 h29v6_14 = (np.load('h29v06_14_train.npy'))
 h31v6_14 = (np.load('h31v06_14_weathertrain.npy'))
-pm_train_14 = (np.load('localstations_14_pm2.5_train.npy'))
+pm_train_14 = np.load('localstations_14_pm2.5_train.npy')
 
 all_batch = np.load('h31v06_14_weathertrain.npy')
 train_sample = all_batch.shape[0]
-valid_batch = np.load('h31v06_14_weathertest.npy')
-valid_sample = valid_batch.shape[0]
+
 
 sample_per_valid = train_sample/sample_batch
 
