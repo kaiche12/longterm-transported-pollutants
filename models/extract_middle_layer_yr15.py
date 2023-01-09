@@ -165,14 +165,11 @@ h28v6_15 = (np.load('h28v06_15_train.npy'))
 h29v5_15 = (np.load('h29v05_15_train.npy'))
 h29v6_15 = (np.load('h29v06_15_train.npy'))
 h31v6_15 = (np.load('h31v06_15_weathertrain.npy'))
-pm_train_15 = (np.load('pm_15_train.npy'))
+pm_train_15 = (np.load('localstations_15_pm2.5_train.npy'))
 
 all_batch = np.load('h31v06_15_weathertrain.npy')
 train_sample = all_batch.shape[0]
-valid_batch = np.load('h31v06_15_weathertest.npy')
-valid_sample = valid_batch.shape[0]
 
-sample_per_epoch = train_sample/sample_batch
 sample_per_valid = train_sample/sample_batch
 
 
